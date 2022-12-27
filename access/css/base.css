@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 17px 18px;
+    background: #171100;
+    border-radius: 24.5px;
+    text-align: center;
+    color: #fff;
+    font-size:1.6rem;
+}
+
+:root {
+    --primary-color: #171100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+   -webkit-line-clamp: var(--line-clamp, 2) ;
+   -webkit-box-orient:vertical;
+    overflow: hidden;
+}
