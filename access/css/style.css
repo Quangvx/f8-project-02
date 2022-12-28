@@ -25,10 +25,23 @@ body {
 
 } 
 
+.header-navbar-wapper {
+    position: sticky;
+    top:-32px;
+    z-index: 1;
+    background:  #FFFCF4;
+
+    
+    
+}
 .header-navbar {
     display: flex;
     align-items: center;
     padding-top: 36px;
+    
+    padding-bottom: 4px;
+    /* background:  #FFFCF4; */
+    /* background:  #FF0000; */
   
 
 
@@ -55,6 +68,16 @@ body {
    
 
 }
+.navbar-listActive-link:hover {
+    /* font-weight: 600; */
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+
+
+}
+
 .navbar-listActive-link.navbar-listActive-link-atc {
     font-weight: 600;
     font-size: 1.6rem;
