@@ -131,14 +131,14 @@
                     <a href="#!" class="btn courses_info_act__btn"
                       >See Courses</a
                     >
-                    <div class="info__watchVideo-wapper">
+                    <a href="#!" class="info__watchVideo-wapper">
                       <div class="info__watchVideo-blockImg">
                         <img src="./img/course/Polygon-2.svg" alt="" />
                       </div>
                       <a href="#!" class="courses_info__watchVideo">
                         Watch Video
                       </a>
-                    </div>
+                    </a>
                   </div>
                   <div class="courses_info__qty-info">
                     <p class="courses_info__text">Recent engagement</p>
@@ -169,20 +169,18 @@
                 </p>
               </div>
               <div class="popularCourses-header-cta">
-                <a href="#!" class="header-cta__link">
-                  <img
-                    src="./img/course-popular/left.svg"
-                    alt=""
-                    class="popularCourses-header-cta__img"
-                  />
-                </a>
-                <a href="#!" class="header-cta__link header-cta__link--active">
-                  <img
-                    src="./img/course-popular/right-2.svg"
-                    alt=""
-                    class="popularCourses-header-cta__img"
-                  />
-                </a>
+                <button class="header-cta__link">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FFB900" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <button class="header-cta__link ">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                </button>
               </div>
             </div>
             <ul class="popularCourses-listCourse">
@@ -195,7 +193,7 @@
                 /></a>
                 <div class="listCourse-content">
                   <div class="content_title-wapper">
-                    <h3 class="header-content__title">
+                    <h3 class="header-content__title line-clamp">
                       <a href="#!">Basic web design</a>
                     </h3>
                     <div class="header-content-ratting">
@@ -207,13 +205,13 @@
                       <span> 4.5 </span>
                     </div>
                   </div>
-                  <p class="listCourse-content__desc">
+                  <p class="listCourse-content__desc --line-clamp">
                     Get the best course, gain knowledge and shine for your
                     future career.
                   </p>
                   <div class="listCourse-content__price">
                     <span>$120.75</span>
-                    <a href="#!" class="btn listCourse-content__btn listCourse-content__btn--gbc"
+                    <a href="#!" class="btn listCourse-content__btn "
                       >Book Now</a
                     >
                   </div>
@@ -228,7 +226,7 @@
                 /></a>
                 <div class="listCourse-content">
                   <div class="content_title-wapper">
-                    <h3 class="header-content__title">
+                    <h3 class="header-content__title line-clamp">
                       <a href="#!">Basic web design</a>
                     </h3>
                     <div class="header-content-ratting">
@@ -240,7 +238,7 @@
                       <span> 4.5 </span>
                     </div>
                   </div>
-                  <p class="listCourse-content__desc">
+                  <p class="listCourse-content__desc --line-clamp">
                     Get the best course, gain knowledge and shine for your
                     future career.
                   </p>
@@ -261,7 +259,7 @@
                 /></a>
                 <div class="listCourse-content">
                   <div class="content_title-wapper">
-                    <h3 class="header-content__title">
+                    <h3 class="header-content__title line-clamp">
                       <a href="#!">Basic web design</a>
                     </h3>
                     <div class="header-content-ratting">
@@ -273,7 +271,7 @@
                       <span> 4.5 </span>
                     </div>
                   </div>
-                  <p class="listCourse-content__desc">
+                  <p class="listCourse-content__desc --line-clamp">
                     Get the best course, gain knowledge and shine for your
                     future career.
                   </p>
@@ -291,35 +289,101 @@
         <!-- ========================== Achievements ============================== -->
         <div class="container-achievements">
           <div class="grid wide">
-            <div class="achievements_block">
-              <div class="achievements_block_Students">
-                <img
-                  src="./img/avatar/women-1.webp"
-                  alt="img-user"
-                  class="block_Students__img"
-                />
-                <p class="block_Students__name">Peter Moor</p>
-                <p class="block_Students__desc">Student of Web Design</p>
-                <div class="block_Students__dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            <ul class="achievements_block-list">
+
+              <!-- feedback item-1 -->
+              <li class="achievements_block">
+                <div class="achievements_block_Students">
+                  <img
+                    src="./img/avatar/women-1.webp"
+                    alt="img-user"
+                    class="block_Students__img"
+                  />
+                  <p class="block_Students__name">Peter Moor</p>
+                  <p class="block_Students__desc">Student of Web Design</p>
+                  <div class="block_Students__dots">
+                   <span class="dot dot--active"></span>
+                   <span class="dot "></span>
+                   <span class="dot"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="achievements_block_info">
-                <img
-                  src="./img/Achievements/Vector-1.svg"
-                  alt=""
-                  class="block_info__img"
-                />
-                <p class="block_info__desc">
-                  Not only does my resume look impressive—filled with the names
-                  and logos of world-class institutions—but these certificates
-                  also bring me closer to my career goals by validating the
-                  skills I've learned."
-                </p>
-              </div>
-            </div>
+                <div class="achievements_block_info">
+                  <img
+                    src="./img/Achievements/Vector-1.svg"
+                    alt=""
+                    class="block_info__img"
+                  />
+                  <blockquote class="block_info__desc">
+                    Not only does my resume look impressive—filled with the names
+                    and logos of world-class institutions—but these certificates
+                    also bring me closer to my career goals by validating the
+                    skills I've learned."
+                  </blockquote>
+                </div>
+              </li>
+                  <!-- feedback item-2 -->
+                  <li class="achievements_block">
+                    <div class="achievements_block_Students">
+                      <img
+                        src="./img/avatar/avatar-2.jpg"
+                        alt="img-user"
+                        class="block_Students__img"
+                      />
+                      <p class="block_Students__name">Peter Moor</p>
+                      <p class="block_Students__desc">Student of Web Design</p>
+                      <div class="block_Students__dots">
+                       <span class="dot"></span>
+                       <span class="dot dot--active"></span>
+                       <span class="dot"></span>
+                      </div>
+                    </div>
+                    <div class="achievements_block_info">
+                      <img
+                        src="./img/Achievements/Vector-1.svg"
+                        alt=""
+                        class="block_info__img"
+                      />
+                      <blockquote class="block_info__desc">
+                        Not only does my resume look impressive—filled with the names
+                        and logos of world-class institutions—but these certificates
+                        also bring me closer to my career goals by validating the
+                        skills I've learned."
+                      </blockquote>
+                    </div>
+                  </li>
+                  <!-- feedback item-3 -->
+                  <li class="achievements_block">
+                    <div class="achievements_block_Students">
+                      <img
+                        src="./img/avatar/avatar-3.webp"
+                        alt="img-user"
+                        class="block_Students__img"
+                      />
+                      <p class="block_Students__name">Peter Moor</p>
+                      <p class="block_Students__desc">Student of Web Design</p>
+                      <div class="block_Students__dots">
+                       <span class="dot"></span>
+                       <span class="dot "></span>
+                       <span class="dot dot--active"></span>
+                      </div>
+                    </div>
+                    <div class="achievements_block_info">
+                      <img
+                        src="./img/Achievements/Vector-1.svg"
+                        alt=""
+                        class="block_info__img"
+                      />
+                      <blockquote class="block_info__desc">
+                        Not only does my resume look impressive—filled with the names
+                        and logos of world-class institutions—but these certificates
+                        also bring me closer to my career goals by validating the
+                        skills I've learned."
+                      </blockquote>
+                    </div>
+                  </li>
+                      
+
+            </ul>
           </div>
         </div>
 
@@ -450,9 +514,9 @@
             </ul>
 
             <footer class="container_blog_footer">
-                <span class="span"></span>
-                <span class="span"></span>
-                <span class="span"></span>
+                <span class="blog__dot"></span>
+                <span class="blog__dot blog__dot--active"></span>
+                <span class="blog__dot"></span>
             </footer>
 
           </div>
