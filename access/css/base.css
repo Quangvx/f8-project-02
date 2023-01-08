@@ -12,6 +12,7 @@
 :root {
     --primary-color: #171100;
     --yellow-color:#FFB900 ;
+    
 }
 
 a {
@@ -24,3 +25,4 @@ a {
    -webkit-box-orient:vertical;
     overflow: hidden;
 }
+

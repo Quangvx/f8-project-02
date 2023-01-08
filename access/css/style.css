@@ -718,14 +718,28 @@ body {
  
 }
 .blog_body_content__time {
+    position: relative;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5F5B53;
+    margin-left: 9px;
+    -webkit-user-select:none;
   
     
 }
+.blog_body_content__time::before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    bottom: 10px;
 
+    background: #FFB900;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+}
 .blog_body_content  .line {
     width: 160px;
     height: 1px;
